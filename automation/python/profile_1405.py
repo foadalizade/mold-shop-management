@@ -1,6 +1,7 @@
 import json
 import os
 from collections import Counter
+import re
 from datetime import date, datetime, time
 
 import openpyxl
@@ -9,6 +10,28 @@ from openpyxl.utils import get_column_letter
 SOURCE = "data/source/1405.xlsx"
 OUT_JSON = "data/processed/1405_profile.json"
 OUT_MD = "data/processed/1405_profile.md"
+
+KEY_HEADERS = ["تاریخ", "شماره نامه درخواست", "کد قالب", "قالب / قطعه / دستگاه"]
+
+def norm_text(v):
+    if v in (None, ""):
+        return None
+    s = str(v).replace("\n", " ").strip()
+    return re.sub(r"\s+", " ", s)
+
+def date_kind(v):
+    if v in (None, ""):
+        return "blank"
+    if isinstance(v, (datetime, date)):
+        return "excel_date"
+    if isinstance(v, (int, float)):
+        return "number"
+    s = norm_text(v) or ""
+    if re.search(r"^\d{4}[-/]\d{1,2}[-/]\d{1,2}$", s):
+        return "gregorian_text"
+    if re.search(r"^[0-9۰-۹]{4}[-/]?[0-9۰-۹]{1,2}[-/]?[0-9۰-۹]{1,2}$", s):
+        return "possible_persian_text"
+    return "other_text"
 
 
 def typ(v):
@@ -62,6 +85,11 @@ for ws in wb.worksheets:
     nonempty_rows = 0
     formula_count = 0
     first_6_rows = []
+    key_indices = {}
+    key_counts = {h: Counter() for h in KEY_HEADERS}
+    key_nonblank = {h: 0 for h in KEY_HEADERS}
+    date_types = Counter()
+    date_samples = []
 
     for row_idx, row in enumerate(ws.iter_rows(), start=1):
         row_has_value = False
@@ -91,6 +119,24 @@ for ws in wb.worksheets:
             if header_row is None and row_idx <= 30:
                 header_row = row_idx
                 headers = row_values
+                key_indices = {}
+                for i, h in enumerate(headers, start=1):
+                    if h in KEY_HEADERS and h not in key_indices:
+                        key_indices[h] = i
+
+            if header_row is not None and row_idx > header_row:
+                for h, idx in key_indices.items():
+                    v = row_values[idx - 1] if idx <= len(row_values) else None
+                    n = norm_text(v)
+                    if n is not None:
+                        key_nonblank[h] += 1
+                        key_counts[h][n] += 1
+                    if h == "تاریخ":
+                        date_types[date_kind(v)] += 1
+                        if v not in (None, "") and len(date_samples) < 20:
+                            sv = str(clean(v))
+                            if sv not in date_samples:
+                                date_samples.append(sv)
 
         if len(first_6_rows) < 6:
             first_6_rows.append({
@@ -117,8 +163,22 @@ for ws in wb.worksheets:
             "sample_unique_values": samples[idx],
         })
 
+    quality = {}
+    for h in KEY_HEADERS:
+        counts = key_counts[h]
+        repeated = {k: v for k, v in counts.items() if v > 1}
+        quality[h] = {
+            "nonblank_count_after_header": key_nonblank[h],
+            "unique_count": len(counts),
+            "repeated_value_count": len(repeated),
+            "top_repeated_values": sorted(repeated.items(), key=lambda x: (-x[1], x[0]))[:20],
+        }
+    quality["تاریخ"]["date_type_counts"] = dict(date_types)
+    quality["تاریخ"]["sample_nonblank_values"] = date_samples
+
     out["sheets"].append({
         "sheet_name": ws.title,
+        "quality_checks": quality,
         "max_row": mr,
         "max_column": mc,
         "nonempty_rows": nonempty_rows,
@@ -158,6 +218,14 @@ with open(OUT_MD, "w", encoding="utf-8") as f:
             "| Col | Header | Nonblank | Blank | Types | Samples |\n"
             "|---:|---|---:|---:|---|---|\n"
         )
+
+        q = s.get("quality_checks", {})
+        f.write("| Key field | Nonblank | Unique | Repeated values |\n|---|---:|---:|---:|\n")
+        for h in KEY_HEADERS:
+            x = q.get(h, {})
+            f.write(f"| {h} | {x.get('nonblank_count_after_header', 0)} | {x.get('unique_count', 0)} | {x.get('repeated_value_count', 0)} |\n")
+        f.write(f"\n**Date types:** {q.get('تاریخ', {}).get('date_type_counts', {})}\n")
+        f.write(f"**Date samples:** {q.get('تاریخ', {}).get('sample_nonblank_values', [])}\n\n")
 
         for c in s["columns"]:
             samples_text = ", ".join(
