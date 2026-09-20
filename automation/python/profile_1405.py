@@ -62,4 +62,5 @@ with open(OUT_MD,"w",encoding="utf-8") as f:
         f.write(f"- Dimensions: {s['max_row']} × {s['max_column']}\n- Non-empty rows: {s['nonempty_rows']}\n- Formulas: {s['formula_count']}\n- Merged ranges: {s['merged_range_count']}\n- Header row: {s['provisional_header_row']}\n\n")
         f.write("| Col | Header | Nonblank | Blank | Types | Samples |\n|---:|---|---:|---:|---|---|\n")
         for c in s["columns"]:
-            f.write(f"| {c['column_index']} | {c['provisional_header']!r} | {c['nonblank_count']} | {c['blank_count']} | {c['data_types']} | {', '.join(c['sample_unique_values'][:8]).replace('|','\\|')} |\n")
+            samples = ", ".join(c["sample_unique_values"][:8]).replace("|", "\\|")
+            f.write(f"| {c['column_index']} | {c['provisional_header']!r} | {c['nonblank_count']} | {c['blank_count']} | {c['data_types']} | {samples} |\n")
