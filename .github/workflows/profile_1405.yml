@@ -1,0 +1,31 @@
+name: Profile 1405 Excel
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "data/source/1405.xlsx"
+      - "automation/python/profile_1405.py"
+      - ".github/workflows/profile_1405.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  profile:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install openpyxl
+      - run: python automation/python/profile_1405.py
+      - name: Commit reports
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/processed/1405_profile.json data/processed/1405_profile.md
+          git diff --cached --quiet && exit 0
+          git commit -m "data: add automated 1405 workbook profile"
+          git push
