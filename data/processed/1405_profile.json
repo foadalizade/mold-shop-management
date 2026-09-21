@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-09-20T14:22:04.641215Z",
+  "generated_at_utc": "2026-09-21T04:10:20.793548Z",
   "source_file": "data/source/1405.xlsx",
   "sheet_count": 13,
   "sheets": [
@@ -488,7 +488,7 @@
         {
           "row": 2,
           "values": [
-            "<openpyxl.worksheet.formula.ArrayFormula object at 0x7fc10d9be810>",
+            "<openpyxl.worksheet.formula.ArrayFormula object at 0x7fbda57ca310>",
             "دستگاه پشم فلز چینی",
             "قطعه نو",
             "صلواتی",
@@ -759,7 +759,7 @@
           },
           "sample_unique_values": [
             "ردیف",
-            "<openpyxl.worksheet.formula.ArrayFormula object at 0x7fc10d9be810>",
+            "<openpyxl.worksheet.formula.ArrayFormula object at 0x7fbda57ca310>",
             "2",
             "3",
             "4",
@@ -1857,8 +1857,7 @@
             ]
           ],
           "date_type_counts": {
-            "gregorian_text": 798,
-            "blank": 205
+            "gregorian_text": 798
           },
           "sample_nonblank_values": [
             "1405/02/01",
@@ -2147,8 +2146,8 @@
       },
       "max_row": 1048576,
       "max_column": 47,
-      "nonempty_rows": 1004,
-      "formula_count": 2814,
+      "nonempty_rows": 799,
+      "formula_count": 2404,
       "merged_range_count": 0,
       "merged_ranges": [],
       "provisional_header_row": 1,
@@ -2257,7 +2256,7 @@
         {
           "row": 2,
           "values": [
-            "<openpyxl.worksheet.formula.ArrayFormula object at 0x7fc10d89ce50>",
+            "<openpyxl.worksheet.formula.ArrayFormula object at 0x7fbda57f9450>",
             "قالب پخت کلاچ پژو 405",
             "قالب تعمیری",
             "فراهی",
@@ -2528,7 +2527,7 @@
           },
           "sample_unique_values": [
             "ردیف",
-            "<openpyxl.worksheet.formula.ArrayFormula object at 0x7fc10d89ce50>",
+            "<openpyxl.worksheet.formula.ArrayFormula object at 0x7fbda57f9450>",
             "2",
             "3",
             "4",
@@ -3265,10 +3264,10 @@
           "column_index": 32,
           "column_letter": "AF",
           "provisional_header": "مقدار ساعت کار شده",
-          "nonblank_count": 1004,
-          "blank_count": 1047572,
+          "nonblank_count": 799,
+          "blank_count": 1047777,
           "data_types": {
-            "text": 1004
+            "text": 799
           },
           "sample_unique_values": [
             "مقدار ساعت کار شده",
@@ -3330,10 +3329,10 @@
           "column_index": 34,
           "column_letter": "AH",
           "provisional_header": "ساعت مرخصی اپراتور",
-          "nonblank_count": 1003,
-          "blank_count": 1047573,
+          "nonblank_count": 798,
+          "blank_count": 1047778,
           "data_types": {
-            "text": 1003
+            "text": 798
           },
           "sample_unique_values": [
             "ساعت مرخصی اپراتور",
@@ -4052,7 +4051,7 @@
         {
           "row": 2,
           "values": [
-            "<openpyxl.worksheet.formula.ArrayFormula object at 0x7fc10dfff1d0>",
+            "<openpyxl.worksheet.formula.ArrayFormula object at 0x7fbda62ddb50>",
             "دستگاه پشم فلز چینی",
             "قطعه نو",
             "فراهی",
@@ -4323,7 +4322,7 @@
           },
           "sample_unique_values": [
             "ردیف",
-            "<openpyxl.worksheet.formula.ArrayFormula object at 0x7fc10dfff1d0>",
+            "<openpyxl.worksheet.formula.ArrayFormula object at 0x7fbda62ddb50>",
             "2",
             "3",
             "4",
@@ -5837,7 +5836,7 @@
         {
           "row": 2,
           "values": [
-            "<openpyxl.worksheet.formula.ArrayFormula object at 0x7fc10d91cd50>",
+            "<openpyxl.worksheet.formula.ArrayFormula object at 0x7fbda57f1110>",
             "قالب پخت کلاچ پژو 405",
             "قالب تعمیری",
             "زیلویی",
@@ -6108,7 +6107,7 @@
           },
           "sample_unique_values": [
             "ردیف",
-            "<openpyxl.worksheet.formula.ArrayFormula object at 0x7fc10d91cd50>",
+            "<openpyxl.worksheet.formula.ArrayFormula object at 0x7fbda57f1110>",
             "2",
             "3",
             "4",
@@ -7639,7 +7638,7 @@
         {
           "row": 2,
           "values": [
-            "<openpyxl.worksheet.formula.ArrayFormula object at 0x7fc10d910050>",
+            "<openpyxl.worksheet.formula.ArrayFormula object at 0x7fbda57d6e90>",
             "سوراخکاری پیلسان",
             "قطعه نو",
             "باقری اصل",
@@ -7980,7 +7979,7 @@
           },
           "sample_unique_values": [
             "ردیف",
-            "<openpyxl.worksheet.formula.ArrayFormula object at 0x7fc10d910050>",
+            "<openpyxl.worksheet.formula.ArrayFormula object at 0x7fbda57d6e90>",
             "2",
             "3",
             "4",
@@ -9097,9 +9096,9 @@
       "sheet_name": "شهریور",
       "quality_checks": {
         "تاریخ": {
-          "nonblank_count_after_header": 400,
-          "unique_count": 14,
-          "repeated_value_count": 14,
+          "nonblank_count_after_header": 419,
+          "unique_count": 15,
+          "repeated_value_count": 15,
           "top_repeated_values": [
             [
               "1405/06/17",
@@ -9154,12 +9153,16 @@
               22
             ],
             [
+              "1405/06/22",
+              19
+            ],
+            [
               "1405/06/09",
               15
             ]
           ],
           "date_type_counts": {
-            "gregorian_text": 400,
+            "gregorian_text": 419,
             "blank": 1
           },
           "sample_nonblank_values": [
@@ -9176,13 +9179,14 @@
             "1405/06/16",
             "1405/06/17",
             "1405/06/18",
-            "1405/06/21"
+            "1405/06/21",
+            "1405/06/22"
           ]
         },
         "شماره نامه درخواست": {
-          "nonblank_count_after_header": 93,
-          "unique_count": 27,
-          "repeated_value_count": 15,
+          "nonblank_count_after_header": 97,
+          "unique_count": 30,
+          "repeated_value_count": 16,
           "top_repeated_values": [
             [
               "1005",
@@ -9241,19 +9245,23 @@
               2
             ],
             [
+              "17228",
+              2
+            ],
+            [
               "1726",
               2
             ]
           ]
         },
         "کد قالب": {
-          "nonblank_count_after_header": 170,
-          "unique_count": 20,
+          "nonblank_count_after_header": 179,
+          "unique_count": 21,
           "repeated_value_count": 18,
           "top_repeated_values": [
             [
               "29889",
-              25
+              31
             ],
             [
               "29087",
@@ -9273,7 +9281,7 @@
             ],
             [
               "30487",
-              13
+              14
             ],
             [
               "ML30256-01S",
@@ -9304,15 +9312,15 @@
               4
             ],
             [
+              "30416",
+              3
+            ],
+            [
               "7501",
               3
             ],
             [
               "30274",
-              2
-            ],
-            [
-              "30416",
               2
             ],
             [
@@ -9326,9 +9334,9 @@
           ]
         },
         "قالب / قطعه / دستگاه": {
-          "nonblank_count_after_header": 400,
-          "unique_count": 73,
-          "repeated_value_count": 51,
+          "nonblank_count_after_header": 420,
+          "unique_count": 79,
+          "repeated_value_count": 54,
           "top_repeated_values": [
             [
               "قالب پخت کلاچ",
@@ -9336,7 +9344,7 @@
             ],
             [
               "کامیونت هیوندای",
-              25
+              31
             ],
             [
               "قالب پخت SAF",
@@ -9356,7 +9364,7 @@
             ],
             [
               "برشی نیوفیس C&C",
-              13
+              14
             ],
             [
               "خودرو دیزل آذربایجان",
@@ -9387,6 +9395,10 @@
               9
             ],
             [
+              "فیکسچر سوراخکاری لنت دایان انرژی",
+              8
+            ],
+            [
               "قالب مینی بوس آریا",
               8
             ],
@@ -9403,11 +9415,7 @@
               7
             ],
             [
-              "فیکسچر سوراخکاری لنت دایان انرژی",
-              7
-            ],
-            [
-              "قالب پخت کلاچ پیکان",
+              "سری نقطه جوش",
               7
             ]
           ]
@@ -9415,8 +9423,8 @@
       },
       "max_row": 1048576,
       "max_column": 47,
-      "nonempty_rows": 402,
-      "formula_count": 1142,
+      "nonempty_rows": 421,
+      "formula_count": 1196,
       "merged_range_count": 0,
       "merged_ranges": [],
       "provisional_header_row": 1,
@@ -9525,7 +9533,7 @@
         {
           "row": 2,
           "values": [
-            "<openpyxl.worksheet.formula.ArrayFormula object at 0x7fc10d822990>",
+            "<openpyxl.worksheet.formula.ArrayFormula object at 0x7fbda574a750>",
             "قالب مینی بوس آریا",
             "قالب نو",
             "مسعودی",
@@ -9788,15 +9796,15 @@
           "column_index": 1,
           "column_letter": "A",
           "provisional_header": "ردیف",
-          "nonblank_count": 401,
-          "blank_count": 1048175,
+          "nonblank_count": 421,
+          "blank_count": 1048155,
           "data_types": {
             "text": 2,
-            "number": 399
+            "number": 419
           },
           "sample_unique_values": [
             "ردیف",
-            "<openpyxl.worksheet.formula.ArrayFormula object at 0x7fc10d822990>",
+            "<openpyxl.worksheet.formula.ArrayFormula object at 0x7fbda574a750>",
             "2",
             "3",
             "4",
@@ -9821,10 +9829,10 @@
           "column_index": 2,
           "column_letter": "B",
           "provisional_header": "قالب / قطعه / دستگاه",
-          "nonblank_count": 401,
-          "blank_count": 1048175,
+          "nonblank_count": 421,
+          "blank_count": 1048155,
           "data_types": {
-            "text": 401
+            "text": 421
           },
           "sample_unique_values": [
             "قالب / قطعه / دستگاه",
@@ -9853,10 +9861,10 @@
           "column_index": 3,
           "column_letter": "C",
           "provisional_header": "نوع تعمیر",
-          "nonblank_count": 401,
-          "blank_count": 1048175,
+          "nonblank_count": 421,
+          "blank_count": 1048155,
           "data_types": {
-            "text": 401
+            "text": 421
           },
           "sample_unique_values": [
             "نوع تعمیر",
@@ -9865,6 +9873,7 @@
             "قطعه نو",
             "قطعه تعمیری",
             "نظافت",
+            "قتالب نو",
             "دستگاه تعمیری"
           ]
         },
@@ -9872,10 +9881,10 @@
           "column_index": 4,
           "column_letter": "D",
           "provisional_header": "اپراتور",
-          "nonblank_count": 401,
-          "blank_count": 1048175,
+          "nonblank_count": 421,
+          "blank_count": 1048155,
           "data_types": {
-            "text": 401
+            "text": 421
           },
           "sample_unique_values": [
             "اپراتور",
@@ -9898,10 +9907,10 @@
           "column_index": 5,
           "column_letter": "E",
           "provisional_header": "مشتری",
-          "nonblank_count": 401,
-          "blank_count": 1048175,
+          "nonblank_count": 421,
+          "blank_count": 1048155,
           "data_types": {
-            "text": 401
+            "text": 421
           },
           "sample_unique_values": [
             "مشتری",
@@ -9913,10 +9922,10 @@
           "column_index": 6,
           "column_letter": "F",
           "provisional_header": "واحد درخواست کننده",
-          "nonblank_count": 401,
-          "blank_count": 1048175,
+          "nonblank_count": 421,
+          "blank_count": 1048155,
           "data_types": {
-            "text": 401
+            "text": 421
           },
           "sample_unique_values": [
             "واحد درخواست کننده",
@@ -9937,10 +9946,10 @@
           "column_index": 7,
           "column_letter": "G",
           "provisional_header": "زیرگروه",
-          "nonblank_count": 401,
-          "blank_count": 1048175,
+          "nonblank_count": 421,
+          "blank_count": 1048155,
           "data_types": {
-            "text": 401
+            "text": 421
           },
           "sample_unique_values": [
             "زیرگروه",
@@ -9956,11 +9965,11 @@
           "column_index": 8,
           "column_letter": "H",
           "provisional_header": "کد قالب",
-          "nonblank_count": 171,
-          "blank_count": 1048405,
+          "nonblank_count": 180,
+          "blank_count": 1048396,
           "data_types": {
             "text": 69,
-            "number": 102
+            "number": 111
           },
           "sample_unique_values": [
             "کد قالب",
@@ -9989,11 +9998,11 @@
           "column_index": 9,
           "column_letter": "I",
           "provisional_header": "شماره نامه درخواست",
-          "nonblank_count": 94,
-          "blank_count": 1048482,
+          "nonblank_count": 98,
+          "blank_count": 1048478,
           "data_types": {
             "text": 20,
-            "number": 74
+            "number": 78
           },
           "sample_unique_values": [
             "شماره نامه درخواست",
@@ -10022,10 +10031,10 @@
           "column_index": 10,
           "column_letter": "J",
           "provisional_header": "خرابی",
-          "nonblank_count": 401,
-          "blank_count": 1048175,
+          "nonblank_count": 421,
+          "blank_count": 1048155,
           "data_types": {
-            "text": 401
+            "text": 421
           },
           "sample_unique_values": [
             "خرابی",
@@ -10054,11 +10063,11 @@
           "column_index": 11,
           "column_letter": "K",
           "provisional_header": "تعداد",
-          "nonblank_count": 401,
-          "blank_count": 1048175,
+          "nonblank_count": 421,
+          "blank_count": 1048155,
           "data_types": {
             "text": 1,
-            "number": 400
+            "number": 420
           },
           "sample_unique_values": [
             "تعداد",
@@ -10078,10 +10087,10 @@
           "column_index": 12,
           "column_letter": "L",
           "provisional_header": "درخواست کننده",
-          "nonblank_count": 124,
-          "blank_count": 1048452,
+          "nonblank_count": 131,
+          "blank_count": 1048445,
           "data_types": {
-            "text": 124
+            "text": 131
           },
           "sample_unique_values": [
             "درخواست کننده",
@@ -10123,10 +10132,10 @@
           "column_index": 14,
           "column_letter": "N",
           "provisional_header": "ایستگاه",
-          "nonblank_count": 401,
-          "blank_count": 1048175,
+          "nonblank_count": 421,
+          "blank_count": 1048155,
           "data_types": {
-            "text": 401
+            "text": 421
           },
           "sample_unique_values": [
             "ایستگاه",
@@ -10145,11 +10154,11 @@
           "column_index": 15,
           "column_letter": "O",
           "provisional_header": "دستگاه",
-          "nonblank_count": 401,
-          "blank_count": 1048175,
+          "nonblank_count": 421,
+          "blank_count": 1048155,
           "data_types": {
             "text": 82,
-            "number": 319
+            "number": 339
           },
           "sample_unique_values": [
             "دستگاه",
@@ -10178,10 +10187,10 @@
           "column_index": 16,
           "column_letter": "P",
           "provisional_header": "قطعه",
-          "nonblank_count": 401,
-          "blank_count": 1048175,
+          "nonblank_count": 421,
+          "blank_count": 1048155,
           "data_types": {
-            "text": 401
+            "text": 421
           },
           "sample_unique_values": [
             "قطعه",
@@ -10210,23 +10219,24 @@
           "column_index": 17,
           "column_letter": "Q",
           "provisional_header": "Part\n Code",
-          "nonblank_count": 1,
-          "blank_count": 1048575,
+          "nonblank_count": 2,
+          "blank_count": 1048574,
           "data_types": {
-            "text": 1
+            "text": 2
           },
           "sample_unique_values": [
-            "Part\n Code"
+            "Part\n Code",
+            "علیرضا به افتاده"
           ]
         },
         {
           "column_index": 18,
           "column_letter": "R",
           "provisional_header": "شرح عملیات",
-          "nonblank_count": 401,
-          "blank_count": 1048175,
+          "nonblank_count": 421,
+          "blank_count": 1048155,
           "data_types": {
-            "text": 401
+            "text": 421
           },
           "sample_unique_values": [
             "شرح عملیات",
@@ -10255,10 +10265,10 @@
           "column_index": 19,
           "column_letter": "S",
           "provisional_header": "نتیجه فرایند",
-          "nonblank_count": 249,
-          "blank_count": 1048327,
+          "nonblank_count": 260,
+          "blank_count": 1048316,
           "data_types": {
-            "text": 249
+            "text": 260
           },
           "sample_unique_values": [
             "نتیجه فرایند",
@@ -10374,10 +10384,10 @@
           "column_index": 28,
           "column_letter": "AB",
           "provisional_header": "ماه",
-          "nonblank_count": 401,
-          "blank_count": 1048175,
+          "nonblank_count": 420,
+          "blank_count": 1048156,
           "data_types": {
-            "text": 401
+            "text": 420
           },
           "sample_unique_values": [
             "ماه",
@@ -10388,10 +10398,10 @@
           "column_index": 29,
           "column_letter": "AC",
           "provisional_header": "تاریخ",
-          "nonblank_count": 401,
-          "blank_count": 1048175,
+          "nonblank_count": 420,
+          "blank_count": 1048156,
           "data_types": {
-            "text": 401
+            "text": 420
           },
           "sample_unique_values": [
             "تاریخ",
@@ -10408,17 +10418,18 @@
             "1405/06/16",
             "1405/06/17",
             "1405/06/18",
-            "1405/06/21"
+            "1405/06/21",
+            "1405/06/22"
           ]
         },
         {
           "column_index": 30,
           "column_letter": "AD",
           "provisional_header": "ساعت کاری",
-          "nonblank_count": 401,
-          "blank_count": 1048175,
+          "nonblank_count": 420,
+          "blank_count": 1048156,
           "data_types": {
-            "text": 401
+            "text": 420
           },
           "sample_unique_values": [
             "ساعت کاری",
@@ -10447,11 +10458,11 @@
           "column_index": 31,
           "column_letter": "AE",
           "provisional_header": "مقدار دقیقه کار شده",
-          "nonblank_count": 401,
-          "blank_count": 1048175,
+          "nonblank_count": 420,
+          "blank_count": 1048156,
           "data_types": {
             "text": 1,
-            "number": 400
+            "number": 419
           },
           "sample_unique_values": [
             "مقدار دقیقه کار شده",
@@ -10480,10 +10491,10 @@
           "column_index": 32,
           "column_letter": "AF",
           "provisional_header": "مقدار ساعت کار شده",
-          "nonblank_count": 402,
-          "blank_count": 1048174,
+          "nonblank_count": 420,
+          "blank_count": 1048156,
           "data_types": {
-            "text": 402
+            "text": 420
           },
           "sample_unique_values": [
             "مقدار ساعت کار شده",
@@ -10661,10 +10672,10 @@
           "column_index": 41,
           "column_letter": "AO",
           "provisional_header": "تاریخ تحویل قالب به تولید",
-          "nonblank_count": 7,
-          "blank_count": 1048569,
+          "nonblank_count": 8,
+          "blank_count": 1048568,
           "data_types": {
-            "text": 7
+            "text": 8
           },
           "sample_unique_values": [
             "تاریخ تحویل قالب به تولید",
@@ -10679,10 +10690,10 @@
           "column_index": 42,
           "column_letter": "AP",
           "provisional_header": "فرم صدور تایید",
-          "nonblank_count": 6,
-          "blank_count": 1048570,
+          "nonblank_count": 7,
+          "blank_count": 1048569,
           "data_types": {
-            "text": 6
+            "text": 7
           },
           "sample_unique_values": [
             "فرم صدور تایید",
@@ -10695,11 +10706,11 @@
           "column_index": 43,
           "column_letter": "AQ",
           "provisional_header": "فی\n(تومان)",
-          "nonblank_count": 365,
-          "blank_count": 1048211,
+          "nonblank_count": 401,
+          "blank_count": 1048175,
           "data_types": {
             "text": 1,
-            "number": 364
+            "number": 400
           },
           "sample_unique_values": [
             "فی\n(تومان)",
@@ -10711,10 +10722,10 @@
           "column_index": 44,
           "column_letter": "AR",
           "provisional_header": "قیمت کار شده\n(تومان)",
-          "nonblank_count": 365,
-          "blank_count": 1048211,
+          "nonblank_count": 401,
+          "blank_count": 1048175,
           "data_types": {
-            "text": 365
+            "text": 401
           },
           "sample_unique_values": [
             "قیمت کار شده\n(تومان)",
@@ -17239,7 +17250,7 @@
             "number": 21
           },
           "sample_unique_values": [
-            "شمش پراید",
+            "قالب مینی بوس آریا",
             "قالب نو",
             "7101",
             "7102",
@@ -17283,9 +17294,9 @@
             "دریل رادیال",
             "total",
             "اپراتور 1",
-            "<openpyxl.worksheet.formula.ArrayFormula object at 0x7fc10d9611d0>",
-            "<openpyxl.worksheet.formula.ArrayFormula object at 0x7fc10d9b8250>",
-            "<openpyxl.worksheet.formula.ArrayFormula object at 0x7fc10d9b98d0>"
+            "<openpyxl.worksheet.formula.ArrayFormula object at 0x7fbda57f5090>",
+            "<openpyxl.worksheet.formula.ArrayFormula object at 0x7fbda57f4ed0>",
+            "<openpyxl.worksheet.formula.ArrayFormula object at 0x7fbda57680d0>"
           ]
         },
         {
@@ -17457,7 +17468,7 @@
             "=SUMIFS(شهریور!$AF$2:$AF$800,شهریور!$C$2:$C$800,P23,شهریور!$AC$2:$AC$800,$R$18)",
             "=SUMIFS(شهریور!$AF$2:$AF$800,شهریور!$C$2:$C$800,P24,شهریور!$AC$2:$AC$800,$R$18)",
             "=SUMIFS(شهریور!$AF$2:$AF$800,شهریور!$C$2:$C$800,P25,شهریور!$AC$2:$AC$800,$R$18)",
-            "=SUMIFS(مرداد!$AQ$2:$AQ$800,مرداد!$C$2:$C$800,\"* نو\",مرداد!$AC$2:$AC$800,R18)"
+            "=SUMIFS(شهریور!$AQ$2:$AQ$800,شهریور!$C$2:$C$800,\"* نو\",شهریور!$AC$2:$AC$800,R18)"
           ]
         },
         {
@@ -17489,7 +17500,7 @@
             "=SUMIFS(شهریور!$AF$2:$AF$800,شهریور!$C$2:$C$800,P23,شهریور!$AC$2:$AC$800,$S$18)",
             "=SUMIFS(شهریور!$AF$2:$AF$800,شهریور!$C$2:$C$800,P24,شهریور!$AC$2:$AC$800,$S$18)",
             "=SUMIFS(شهریور!$AF$2:$AF$800,شهریور!$C$2:$C$800,P25,شهریور!$AC$2:$AC$800,$S$18)",
-            "=SUMIFS(مرداد!$AQ$2:$AQ$800,مرداد!$C$2:$C$800,\"* نو\",مرداد!$AC$2:$AC$800,S18)"
+            "=SUMIFS(شهریور!$AQ$2:$AQ$800,شهریور!$C$2:$C$800,\"* نو\",شهریور!$AC$2:$AC$800,S18)"
           ]
         },
         {
@@ -17521,7 +17532,7 @@
             "=SUMIFS(شهریور!$AF$2:$AF$800,شهریور!$C$2:$C$800,P23,شهریور!$AC$2:$AC$800,$T$18)",
             "=SUMIFS(شهریور!$AF$2:$AF$800,شهریور!$C$2:$C$800,P24,شهریور!$AC$2:$AC$800,$T$18)",
             "=SUMIFS(شهریور!$AF$2:$AF$800,شهریور!$C$2:$C$800,P25,شهریور!$AC$2:$AC$800,$T$18)",
-            "=SUMIFS(مرداد!$AQ$2:$AQ$800,مرداد!$C$2:$C$800,\"* نو\",مرداد!$AC$2:$AC$800,T18)"
+            "=SUMIFS(شهریور!$AQ$2:$AQ$800,شهریور!$C$2:$C$800,\"* نو\",شهریور!$AC$2:$AC$800,T18)"
           ]
         },
         {
@@ -17553,7 +17564,7 @@
             "=SUMIFS(شهریور!$AF$2:$AF$800,شهریور!$C$2:$C$800,P23,شهریور!$AC$2:$AC$800,$U$18)",
             "=SUMIFS(شهریور!$AF$2:$AF$800,شهریور!$C$2:$C$800,P24,شهریور!$AC$2:$AC$800,$U$18)",
             "=SUMIFS(شهریور!$AF$2:$AF$800,شهریور!$C$2:$C$800,P25,شهریور!$AC$2:$AC$800,$U$18)",
-            "=SUMIFS(مرداد!$AQ$2:$AQ$800,مرداد!$C$2:$C$800,\"* نو\",مرداد!$AC$2:$AC$800,U18)"
+            "=SUMIFS(شهریور!$AQ$2:$AQ$800,شهریور!$C$2:$C$800,\"* نو\",شهریور!$AC$2:$AC$800,U18)"
           ]
         },
         {
@@ -17585,7 +17596,7 @@
             "=SUMIFS(شهریور!$AF$2:$AF$800,شهریور!$C$2:$C$800,P23,شهریور!$AC$2:$AC$800,$V$18)",
             "=SUMIFS(شهریور!$AF$2:$AF$800,شهریور!$C$2:$C$800,P24,شهریور!$AC$2:$AC$800,$V$18)",
             "=SUMIFS(شهریور!$AF$2:$AF$800,شهریور!$C$2:$C$800,P25,شهریور!$AC$2:$AC$800,$V$18)",
-            "=SUMIFS(مرداد!$AQ$2:$AQ$800,مرداد!$C$2:$C$800,\"* نو\",مرداد!$AC$2:$AC$800,V18)"
+            "=SUMIFS(شهریور!$AQ$2:$AQ$800,شهریور!$C$2:$C$800,\"* نو\",شهریور!$AC$2:$AC$800,V18)"
           ]
         },
         {
@@ -17617,7 +17628,7 @@
             "=SUMIFS(شهریور!$AF$2:$AF$800,شهریور!$C$2:$C$800,P23,شهریور!$AC$2:$AC$800,$W$18)",
             "=SUMIFS(شهریور!$AF$2:$AF$800,شهریور!$C$2:$C$800,P24,شهریور!$AC$2:$AC$800,$W$18)",
             "=SUMIFS(شهریور!$AF$2:$AF$800,شهریور!$C$2:$C$800,P25,شهریور!$AC$2:$AC$800,$W$18)",
-            "=SUMIFS(مرداد!$AQ$2:$AQ$800,مرداد!$C$2:$C$800,\"* نو\",مرداد!$AC$2:$AC$800,W18)"
+            "=SUMIFS(شهریور!$AQ$2:$AQ$800,شهریور!$C$2:$C$800,\"* نو\",شهریور!$AC$2:$AC$800,W18)"
           ]
         },
         {
@@ -17649,7 +17660,7 @@
             "=SUMIFS(شهریور!$AF$2:$AF$800,شهریور!$C$2:$C$800,P23,شهریور!$AC$2:$AC$800,$X$18)",
             "=SUMIFS(شهریور!$AF$2:$AF$800,شهریور!$C$2:$C$800,P24,شهریور!$AC$2:$AC$800,$X$18)",
             "=SUMIFS(شهریور!$AF$2:$AF$800,شهریور!$C$2:$C$800,P25,شهریور!$AC$2:$AC$800,$X$18)",
-            "=SUMIFS(مرداد!$AQ$2:$AQ$800,مرداد!$C$2:$C$800,\"* نو\",مرداد!$AC$2:$AC$800,X18)"
+            "=SUMIFS(شهریور!$AQ$2:$AQ$800,شهریور!$C$2:$C$800,\"* نو\",شهریور!$AC$2:$AC$800,X18)"
           ]
         },
         {
