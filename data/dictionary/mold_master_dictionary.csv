@@ -1,0 +1,18 @@
+﻿FieldID,StandardFieldName,BusinessMeaning,DataType,RequiredStatus,Unique,Source,Validation,Use,Notes
+MM-001,MoldID,شناسه داخلی و پایدار رکورد قالب در سیستم,Text/UUID,Required,YES,System generated,Must be unique and immutable,Internal joins,Do not expose as replacement for MoldCode.
+MM-002,MoldCode,کد رسمی و یکتای قالب,Text,Required in target state,YES,Mold handover/coding process,"Unique, normalized, text-preserving",Primary mold business key,Legacy molds may be temporarily uncoded.
+MM-003,MoldName,نام قالب,Text,Required for known mold,NO,F002 / Mold Master,Completeness and controlled spelling,Form/Power BI/MDR,F002 is agreed source in 1405 mold records.
+MM-004,MoldLifecycleStatus,وضعیت چرخه عمر قالب,Category,Required,NO,Workflow/Master,Controlled values,Mold lifecycle,"Suggested: New, InProduction, UnderRepair, Retired, Scrapped."
+MM-005,ProductTechnicalNo,شماره فنی محصول مرتبط با قالب,Text,Conditional,NO,Product master/form,Text-preserving,New mold identification,Keep independent; one product may relate to multiple molds.
+MM-006,CurrentSubGroup,زیرگروه/حوزه مرتبط فعلی قالب,Text/Code,Optional,NO,F007 / Master,Controlled mapping,Segmentation,Not physical installation location.
+MM-007,MoldInstallationLocation,محل فیزیکی نصب/استفاده قالب,Text/Code,Optional,NO,Handover/master/form,Controlled location master,Production/location reporting,Independent from SubGroup.
+MM-008,CurrentResponsibleUnit,واحد مسئول فعلی قالب,Text/Code,Optional,NO,MDR/master,Unit master mapping,Ownership/accountability,Separate from requesting unit.
+MM-009,OfficialCodingDate,تاریخ تخصیص رسمی MoldCode,PersianDate,Optional,NO,Coding process,Valid date,Lifecycle traceability,
+MM-010,HandoverDocumentID,شناسه فرم تحویل/تأییدیه ایجاد یا تخصیص کد,Text,Optional,NO,MDR,Document traceability,MDR,Links mold master to source document.
+MM-011,HandoverDate,تاریخ تحویل/تأیید قالب,PersianDate,Optional,NO,Handover form,Valid date,Mold lifecycle,
+MM-012,FirstProductionUseDate,اولین تاریخ استفاده/تحویل به تولید,PersianDate,Optional,NO,F041 / handover,Valid date,Lead-time/lifecycle,
+MM-013,LastDeliveryToProductionDate,آخرین تاریخ تحویل قالب به تولید,PersianDate,Optional,NO,F041/history,Valid date,Mold history,Derived from delivery history.
+MM-014,CreatedAt,تاریخ ایجاد رکورد Master,DateTime,Required,NO,System generated,Valid timestamp,Governance,
+MM-015,UpdatedAt,آخرین تاریخ به‌روزرسانی Master,DateTime,Required,NO,System generated,Valid timestamp,Governance,
+MM-016,SourceRecordRef,مرجع رکورد/سند منبع ایجاد یا به‌روزرسانی,Text,Optional,NO,Source system,Traceable reference,MDR/data lineage,
+MM-017,Notes,یادداشت‌های Master قالب,LongText,Optional,NO,MDR/master,Raw/controlled note handling,Context,Do not store repair transactions here.
