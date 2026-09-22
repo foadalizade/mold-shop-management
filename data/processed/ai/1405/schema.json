@@ -1,0 +1,250 @@
+{
+  "version": "ai-readable-1405-v1",
+  "standard_fields": [
+    {
+      "source_field": "F001",
+      "raw_name": "ردیف",
+      "standard_name": "RecordID"
+    },
+    {
+      "source_field": "F002",
+      "raw_name": "قالب / قطعه / دستگاه",
+      "standard_name": "AssetName"
+    },
+    {
+      "source_field": "F003",
+      "raw_name": "نوع تعمیر",
+      "standard_name": "WorkType"
+    },
+    {
+      "source_field": "F004",
+      "raw_name": "اپراتور",
+      "standard_name": "OperatorID"
+    },
+    {
+      "source_field": "F005",
+      "raw_name": "مشتری",
+      "standard_name": "CustomerID"
+    },
+    {
+      "source_field": "F006",
+      "raw_name": "واحد درخواست کننده",
+      "standard_name": "RequestingUnitID"
+    },
+    {
+      "source_field": "F007",
+      "raw_name": "زیرگروه",
+      "standard_name": "SubGroup"
+    },
+    {
+      "source_field": "F008",
+      "raw_name": "کد قالب",
+      "standard_name": "MoldCode"
+    },
+    {
+      "source_field": "F009",
+      "raw_name": "شماره نامه درخواست",
+      "standard_name": "RequestLetterNo"
+    },
+    {
+      "source_field": "F010",
+      "raw_name": "خرابی",
+      "standard_name": "FailureDescriptionRaw"
+    },
+    {
+      "source_field": "F011",
+      "raw_name": "تعداد",
+      "standard_name": "Quantity"
+    },
+    {
+      "source_field": "F012",
+      "raw_name": "درخواست کننده",
+      "standard_name": "RequesterID"
+    },
+    {
+      "source_field": "F013",
+      "raw_name": "کد دستگاه خراب",
+      "standard_name": "RelatedMachineCode"
+    },
+    {
+      "source_field": "F014",
+      "raw_name": "ایستگاه",
+      "standard_name": "StationID"
+    },
+    {
+      "source_field": "F015",
+      "raw_name": "دستگاه",
+      "standard_name": "MachineName"
+    },
+    {
+      "source_field": "F016",
+      "raw_name": "قطعه",
+      "standard_name": "PartName"
+    },
+    {
+      "source_field": "F017",
+      "raw_name": "Part Code",
+      "standard_name": "PartCode"
+    },
+    {
+      "source_field": "F018",
+      "raw_name": "شرح عملیات",
+      "standard_name": "OperationDescriptionRaw"
+    },
+    {
+      "source_field": "F019",
+      "raw_name": "نتیجه فرایند",
+      "standard_name": "ProcessResultRaw"
+    },
+    {
+      "source_field": "F020",
+      "raw_name": "تاریخ ارسال به سختکاری",
+      "standard_name": "HardeningSentDate"
+    },
+    {
+      "source_field": "F021",
+      "raw_name": "مجری سختکاری",
+      "standard_name": "HardeningExecutor"
+    },
+    {
+      "source_field": "F022",
+      "raw_name": "هزینه سختکاری تومان",
+      "standard_name": "HardeningCost"
+    },
+    {
+      "source_field": "F023",
+      "raw_name": "تاریخ دریافت",
+      "standard_name": "HardeningReceivedDate"
+    },
+    {
+      "source_field": "F024",
+      "raw_name": "تاریخ ارسال به کروم",
+      "standard_name": "ChromeSentDate"
+    },
+    {
+      "source_field": "F025",
+      "raw_name": "مجری کروم",
+      "standard_name": "ChromeExecutor"
+    },
+    {
+      "source_field": "F026",
+      "raw_name": "هزینه کروم تومان",
+      "standard_name": "ChromeCost"
+    },
+    {
+      "source_field": "F027",
+      "raw_name": "تاریخ دریافت",
+      "standard_name": "ChromeReceivedDate"
+    },
+    {
+      "source_field": "F028",
+      "raw_name": "ماه",
+      "standard_name": "Period"
+    },
+    {
+      "source_field": "F029",
+      "raw_name": "تاریخ",
+      "standard_name": "WorkDate"
+    },
+    {
+      "source_field": "F030",
+      "raw_name": "ساعت کاری",
+      "standard_name": "WorkShift"
+    },
+    {
+      "source_field": "F031",
+      "raw_name": "مقدار دقیقه کار شده",
+      "standard_name": "WorkedMinutes"
+    },
+    {
+      "source_field": "F032",
+      "raw_name": "مقدار ساعت کار شده",
+      "standard_name": "WorkedHours"
+    },
+    {
+      "source_field": "F033",
+      "raw_name": "مرخصی اپراتور",
+      "standard_name": "OperatorLeave"
+    },
+    {
+      "source_field": "F034",
+      "raw_name": "ساعت مرخصی اپراتور",
+      "standard_name": "OperatorLeaveHours"
+    },
+    {
+      "source_field": "F035",
+      "raw_name": "توضیحات",
+      "standard_name": "Notes"
+    },
+    {
+      "source_field": "F036",
+      "raw_name": "قطعات خراب شده",
+      "standard_name": "DamagedParts"
+    },
+    {
+      "source_field": "F037",
+      "raw_name": "علت خرابی ثبت شده2",
+      "standard_name": "RecordedFailureCause"
+    },
+    {
+      "source_field": "F038",
+      "raw_name": "تاریخ3",
+      "standard_name": "AdditionalProcessDateTime"
+    },
+    {
+      "source_field": "F039",
+      "raw_name": "تایید کننده",
+      "standard_name": "ApproverID"
+    },
+    {
+      "source_field": "F040",
+      "raw_name": "تاریخ تحویل تعمیر/استارت تولید",
+      "standard_name": "RepairDeliveryOrProductionStartDate"
+    },
+    {
+      "source_field": "F041",
+      "raw_name": "تاریخ تحویل قالب به تولید",
+      "standard_name": "MoldDeliveryToProductionDate"
+    },
+    {
+      "source_field": "F042",
+      "raw_name": "فرم صدور تایید",
+      "standard_name": "ApprovalFormStatus"
+    },
+    {
+      "source_field": "F043",
+      "raw_name": "فی (تومان)",
+      "standard_name": "UnitPrice"
+    },
+    {
+      "source_field": "F044",
+      "raw_name": "قیمت کار شده (تومان)",
+      "standard_name": "WorkPrice"
+    },
+    {
+      "source_field": "F045",
+      "raw_name": "دقیقه خرابی دستگاه تراشکاری",
+      "standard_name": "LatheMachineDowntimeMinutes"
+    },
+    {
+      "source_field": "F046",
+      "raw_name": "ساعت خرابی دستگاه تراشکاری",
+      "standard_name": "LatheMachineDowntimeHours"
+    },
+    {
+      "source_field": "F047",
+      "raw_name": "",
+      "standard_name": "UnnamedSourceField"
+    }
+  ],
+  "derived_fields": [
+    "SourceSheet",
+    "SourceRowNumber",
+    "RecordKey",
+    "AssetType",
+    "MoldCodeNorm",
+    "RequestLetterNoNorm",
+    "WorkTypeNorm",
+    "ProcessStatus"
+  ]
+}
