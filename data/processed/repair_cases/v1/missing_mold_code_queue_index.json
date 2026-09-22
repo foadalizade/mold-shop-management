@@ -1,0 +1,23 @@
+{
+  "version": "missing-mold-code-review-v1",
+  "source": "data/processed/ai/1405/operational_records.csv",
+  "generated_at_utc": "2026-09-22T14:48:32Z",
+  "record_count": 430,
+  "status": "REVIEW ONLY",
+  "rule": "AssetType=قالب AND WorkType contains تعمیر AND MoldCodeNorm is blank",
+  "no_auto_inference": true,
+  "breakdown": {
+    "by_source_sheet": {
+      "اردیبهشت": 88,
+      "تیر": 161,
+      "خرداد": 30,
+      "شهریور": 52,
+      "فروردین": 28,
+      "مرداد": 71
+    },
+    "request_letter_presence": {
+      "HAS_REQUEST": 41,
+      "NO_REQUEST": 389
+    }
+  }
+}
