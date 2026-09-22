@@ -1,6 +1,6 @@
 ﻿FieldID,RawFieldName,StandardFieldName,DataType,BusinessMeaning,RequiredStatus,UnitOrFormat,RuleIDs,Layer,PowerBIUsage,Notes
 F001,ردیف,RecordID,Text/Integer,شناسه ترتیبی رکورد عملیاتی در منبع,Required for operational record,Source sequence,DQ-001; DQ-002; DQ-006; DQ-107; DQ-108,Raw + Standard,Record traceability,Not the global project key; Standard RecordKey will be generated.
-F002,قالب / قطعه / دستگاه,AssetType,Category/Text,نوع دارایی/موضوع فعالیت: قالب، قطعه یا دستگاه,Required,Controlled category,DQ-008,Raw + Standard,Asset segmentation,Final controlled list to be approved.
+F002,قالب / قطعه / دستگاه,AssetName,Text,نام/شرح دارایی یا موضوع فعالیت؛ در رکوردهای قالب، مقدار این فیلد به‌عنوان MoldName استفاده می‌شود,Required,Free text / asset name,DQ-008,Raw + Standard,Asset/Mold identification,برای قالب‌ها F002 منبع نام قالب است. AssetType یک فیلد استاندارد مستقل/مشتق‌شده از WorkType و قواعد کسب‌وکار خواهد بود.
 F003,نوع تعمیر,WorkType,Category/Text,نوع فعالیت/کار مرتبط با رکورد,Conditional,Controlled category,DQ-009; DQ-017; DQ-025; DQ-027,Raw + Standard,Work-type analysis,Used to distinguish new/repair work; final vocabulary to be approved.
 F004,اپراتور,Operator,Text,فرد انجام‌دهنده عملیات,Conditional,Name/ID,DQ-010,Raw + Standard,Labor analysis,Future Employee Master.
 F005,مشتری,Customer,Text/Category,مشتری یا طرف دریافت‌کننده خدمت,Conditional,Name/Code,DQ-011,Raw + Standard,Customer/project analysis,Important for future outsourcing expansion.
