@@ -1,0 +1,30 @@
+﻿RepairCaseID,MoldCode,MoldCodeNorm,MoldName,RequestLetterNo,RepairSequenceNo,CaseStartDate,CaseLastWorkDate,RecordCount,TotalWorkedHours,FailureExamples,DetectionBasis,Confidence
+RC-1405-0001,01S,01S,قالب پخت کلاچ پژو 405,522/د/05,1,1405/01/20,1405/01/20,3,5.5,لهیدگی سنبه و ماتریس و میل راهنما,MoldCodeNorm + RequestLetterNoNorm,HIGH
+RC-1405-0002,02s,02S,قالب پخت کلاچ پژو 405,404/د/05,1,1405/01/17,1405/03/24,22,96.75,لهیدگی سنبه و ماتریس ، میل راهنما | ساخت Top Plate Botton plate guide rod Matrix stoper | سوراخکاری 4 عدد سنبه | ساخت 160 عدد پیچ واسطه رینگ قالب های کلاچ(مصرف هر کدام 16 عدد),MoldCodeNorm + RequestLetterNoNorm,HIGH
+RC-1405-0003,03s,03S,قالب پخت کلاچ پژو 405,407/د/05,1,1405/01/17,1405/04/01,61,267.92,قالب در تاریخ 1404/07/01 تحویل تولید گردید(657)منتها بعلت دور برداشتن ، باعث خرابی کروم گردید | ساخت 160 عدد پیچ واسطه رینگ قالب های کلاچ(مصرف هر کدام 16 عدد),MoldCodeNorm + RequestLetterNoNorm,HIGH
+RC-1405-0004,04S,04S,قالب پخت کلاچ پیکان,746,1,1405/01/08,1405/03/31,75,294.83,لهیدگی سنبه و ماتریس | ساخت 160 عدد پیچ واسطه رینگ قالب های کلاچ(مصرف هر کدام 16 عدد) | ساخت Top Plate Botton plate guide rod Matrix stoper | ساخت پیچ واسطه قالب | کف تراشی Stop قالب,MoldCodeNorm + RequestLetterNoNorm,HIGH
+RC-1405-0005,05S,05S,قالب پخت کلاچ پیکان,692,1,1405/01/11,1405/04/07,40,199.83,لهیدگی سنبه و ماتریس(غیر قابل اصلاح) | جایگزینی Matrix | ساخت Top Plate Botton plate guide rod Matrix stoper | Stoper | گزارش به اسن تیبا 215 ثبت شده,MoldCodeNorm + RequestLetterNoNorm,HIGH
+RC-1405-0006,06s,06S,قالب پخت کلاچ پیکان,682,1,1405/01/09,1405/04/15,42,188.0,دمونتاژ قالب | ساخت Pin connector | ساخت Top Plate Botton plate guide rod Matrix stoper | سوراخکاری 4 عدد سنبه | ساخت میل راهنما,MoldCodeNorm + RequestLetterNoNorm,HIGH
+RC-1405-0007,07s,07S,قالب پخت کلاچ پیکان,682,1,1405/02/01,1405/04/21,5,30.0,ساخت Top Plate Botton plate guide rod Matrix stoper,MoldCodeNorm + RequestLetterNoNorm,HIGH
+RC-1405-0008,08s,08S,قالب پخت کلاچ پیکان,708,1,1405/01/17,1405/01/18,4,22.0,اصلاح,MoldCodeNorm + RequestLetterNoNorm,HIGH
+RC-1405-0009,1,1,قالب SAF توری,1714,1,1405/04/06,1405/04/31,9,15.0,سنگ زنی قالب | ساخت میل راهنما,MoldCodeNorm + RequestLetterNoNorm,HIGH
+RC-1405-0010,1,1,قالب مترو مشهد,1722,2,1405/06/07,1405/06/15,10,30.0,سنگ زدن قالب تعویض صفحات زیر و رو,MoldCodeNorm + RequestLetterNoNorm,HIGH
+RC-1405-0011,10S,10S,قالب پخت کلاچ پژو 405,691,1,1405/02/07,1405/04/10,15,72.58,ساخت Top Plate Botton plate guide rod Matrix stoper | ساخت 160 عدد پیچ واسطه رینگ قالب های کلاچ(مصرف هر کدام 16 عدد),MoldCodeNorm + RequestLetterNoNorm,HIGH
+RC-1405-0012,29087,29087,قالب پخت SAF,1005,1,1405/04/25,1405/06/22,33,202.5,لهیدگی,MoldCodeNorm + RequestLetterNoNorm,HIGH
+RC-1405-0013,30425,30425,قالب توری پگاسوز,1718,1,1405/04/23,1405/05/06,3,5.0,سنگ زنی قالب,MoldCodeNorm + RequestLetterNoNorm,HIGH
+RC-1405-0014,70028,70028,قالب لودری 70028,1704,1,1405/03/02,1405/03/18,7,17.5,سنگ زنی قالب | اصلاح ورقگیر,MoldCodeNorm + RequestLetterNoNorm,HIGH
+RC-1405-0015,FC30278-01S,FC30278-01S,قالب تیبا خزینه چپ,05/د/3024,1,1405/03/17,1405/03/23,2,7.0,تعویض پین,MoldCodeNorm + RequestLetterNoNorm,HIGH
+RC-1405-0016,FD30303,FD30303,قالب نیسان آریا,05/د/1745,1,1405/02/29,1405/03/03,2,5.0,تولیدی لنت شدن پر لب,MoldCodeNorm + RequestLetterNoNorm,HIGH
+RC-1405-0017,MC30241-02s,MC30241-02S,قالب پخت کلاچ پیکان آرژانتینی,738,1,1405/01/08,1405/03/27,45,238.75,لهیدگی سنبه ، ماتریس و میل راهنما | ساخت Top Plate Botton plate guide rod Matrix stoper | سوراخکاری 4 عدد سنبه | ساخت 160 عدد پیچ واسطه رینگ قالب های کلاچ(مصرف هر کدام 16 عدد),MoldCodeNorm + RequestLetterNoNorm,HIGH
+RC-1405-0018,Mc30243-04s,MC30243-04S,قالب پخت کلاچ پژو 405,737,1,1405/01/16,1405/04/15,49,293.92,لهیدگی(بعلت تعمیر زیاد و نازک بودن قالب (غیر قابل تعمیر)) | ساخت Top Plate Botton plate guide rod Matrix stoper | ساخت 160 عدد پیچ واسطه رینگ قالب های کلاچ(مصرف هر کدام 16 عدد) | ساخت پیچ واسطه قالب,MoldCodeNorm + RequestLetterNoNorm,HIGH
+RC-1405-0019,Mc30243-07s,MC30243-07S,قالب پخت کلاچ پژو 405,739,1,1405/01/23,1405/02/19,19,88.92,لهیدگی سنبه ، ماتریس و میل راهنما | لهیدگی سنبه ، ماتریس و میل راهنما(از رده خارج) | ساخت Top Plate Botton plate guide rod Matrix stoper,MoldCodeNorm + RequestLetterNoNorm,HIGH
+RC-1405-0020,MC30250-01S,MC30250-01S,قالب 309 بدون سوراخ,1590/د/5,1,1405/02/12,1405/02/12,1,1.0,تعویض پین پران,MoldCodeNorm + RequestLetterNoNorm,HIGH
+RC-1405-0021,MC30250-02s,MC30250-02S,قالب 309 سوراخدار,402/د/05,1,1405/01/19,1405/02/09,19,60.5,خرابی پین پران- اصلاح کفی قالب | اصلاح کفی,MoldCodeNorm + RequestLetterNoNorm,HIGH
+RC-1405-0022,MH19562-01P,MH19562-01P,قالب ولوو سوپر,747,1,1405/01/09,1405/04/29,24,146.33,لهیدگی سنبه,MoldCodeNorm + RequestLetterNoNorm,HIGH
+RC-1405-0023,MH19562-01P,MH19562-01P,قالب ولوو سوپر,747 17014,2,1405/04/31,1405/05/08,11,56.5,ساخت روبند فریم قالب (حالت صاف 8 عدد و حالت زاویه دار 16 عدد) فرم درخواست 17014، ساخت فریم جدید جهت قالب,MoldCodeNorm + RequestLetterNoNorm,HIGH
+RC-1405-0024,ML21355-01s,ML21355-01S,قالب پراید خاردار,624/د/05,1,1405/01/24,1405/03/05,33,154.0,لهیدگی سنبه ، ماتریس,MoldCodeNorm + RequestLetterNoNorm,HIGH
+RC-1405-0025,ML23873-02S,ML23873-02S,قالب جلو ریو,772,1,1405/02/12,1405/02/12,2,6.0,اصلاح سنبه های قالب,MoldCodeNorm + RequestLetterNoNorm,HIGH
+RC-1405-0026,ML23873-03s,ML23873-03S,قالب جلو ریو,772,1,1405/01/18,1405/02/10,15,56.5,اصلاح سنبه های قالب,MoldCodeNorm + RequestLetterNoNorm,HIGH
+RC-1405-0027,MT30107,MT30107,قالب اکسپرس,740,1,1405/01/09,1405/01/11,4,15.0,لهیدگی کف قالب,MoldCodeNorm + RequestLetterNoNorm,HIGH
+RC-1405-0028,MT30107-01S,MT30107-01S,قالب اکسپرس,1971/د/05,1,1405/02/23,1405/02/27,5,29.0,خرابی کفی,MoldCodeNorm + RequestLetterNoNorm,HIGH
+RC-1405-0029,MT30181-01s,MT30181-01S,قالب ترنست,732,1,1405/01/15,1405/01/16,4,11.0,لهیدگی میل راهنما ، تعویض تیغه های قالب(بزرگ به کوچک),MoldCodeNorm + RequestLetterNoNorm,HIGH

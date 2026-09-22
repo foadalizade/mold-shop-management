@@ -1,0 +1,16 @@
+{
+  "version": "repair-case-detection-v1",
+  "source": "data/processed/ai/1405/operational_records.csv",
+  "generated_at_utc": "2026-09-22T12:06:20Z",
+  "repair_like_record_count": 1076,
+  "proposed_repair_case_count": 29,
+  "high_confidence_record_assignments": 564,
+  "records_in_review_queue": 82,
+  "molds_with_multiple_proposed_cases": 2,
+  "logic": {
+    "same_mold_same_request": "same proposed RepairCase",
+    "same_mold_different_nonblank_request": "new proposed RepairCase",
+    "same_mold_blank_request": "REVIEW; no automatic assignment"
+  },
+  "status": "TEST / CANDIDATE ONLY"
+}
