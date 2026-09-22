@@ -1,0 +1,18 @@
+﻿MappingID,Page,FormLabel,FieldID,StandardField,SourceType,SourceField,TriggerCondition,NewMold,RepairMold,AutomationAction,MappingStatus,VerificationNote
+FM-001,1,نام قالب,F002,MoldName,Raw → Standard,F002 قالب / قطعه / دستگاه,When record is a mold and form workflow is triggered,YES,YES,Read F002 and expose it as MoldName for mold records,CONFIRMED_BY_USER,F002 is the agreed source for mold name.
+FM-002,1,کد قالب,F008,MoldCode,Raw → Standard,F008 کد قالب,When MoldCode exists; mandatory for repair workflow and after official coding,OPTIONAL_EARLY,REQUIRED,Populate from MoldCode,CONFIRMED_BY_USER,For new molds it may be blank before coding.
+FM-003,1,شماره فنی محصول,,ProductTechnicalNo,Master/Standard,Future F048,New mold before official MoldCode assignment,YES,N/A,Populate from ProductTechnicalNo when needed to identify new mold,DESIGN_CONFIRMED,Independent from MoldCode.
+FM-004,1,واحد/زیرگروه مرتبط,F007,SubGroup,Raw → Standard,F007 زیرگروه,When the form needs the organizational/consumption context,YES,YES,Populate from F007 without redefining F007 as physical location,CONFIRMED_WITH_BUSINESS_RULE,Physical MoldInstallationLocation remains a future independent field.
+FM-005,1,نوع قالب / کارکرده-نو,F003,WorkType,Raw → Standard,F003 نوع تعمیر,When form applies,YES,YES,Map approved WorkType and select applicable checkbox,DESIGN_CONFIRMED,Exact checkbox label/placement should be verified against the original PDF.
+FM-006,1,شماره درخواست,F009,RequestLetterNo,Raw → Standard,F009 شماره نامه درخواست,When a formal request exists,YES,YES,Populate from request record,DESIGN_CONFIRMED,
+FM-007,1,کد دستگاه مرتبط,F013,RelatedMachineCode,Raw → Standard/Master,F013 کد دستگاه خراب,When machine relationship applies,CONDITIONAL,CONDITIONAL,Populate only when applicable,DESIGN_CONFIRMED,Do not infer machine code.
+FM-008,2,تاریخ تحویل به واحد تولید,F041,MoldDeliveryToProductionDate,Raw → Standard,F041 تاریخ تحویل قالب به تولید,Required workflow trigger for applicable new/repair mold forms,YES,YES,Populate from F041 and use as workflow completion trigger,CONFIRMED_BY_USER,User explicitly mapped F041 to delivery date.
+FM-009,2,تأییدکننده,F039,Approver,Raw → Standard/Master,F039 تایید کننده,When approval is recorded,YES,YES,Populate from approved Approver/Employee source,DESIGN_CONFIRMED,
+FM-010,2,نتیجه/وضعیت فرآیند,,ProcessStatus,Processed,F019 → ProcessStatus,When form displays process completion,YES,YES,Show standardized ProcessStatus without overwriting Raw F019,DESIGN_CONFIRMED,
+FM-011,2,مجموع ساعات کارشده,,WorkedHoursTotal,Derived,SUM(F032) by RepairCase,Automatic repair-form eligibility check,N/A,YES,"Calculate total; if >20 and F041 is filled and repair complete, trigger form",CONFIRMED_WORKFLOW,New molds do not use the 20h threshold.
+FM-012,2,شناسه فرم,,ApprovalFormID,Automation,Generated,On first controlled generation,YES,YES,Generate unique form ID,DESIGN_CONFIRMED,
+FM-013,2,نسخه فرم,,ApprovalFormVersion,Automation,Generated,On generation/revision,YES,YES,Assign controlled version,DESIGN_CONFIRMED,
+FM-014,2,وضعیت فرم,,ApprovalFormStatus,Automation,Generated,Throughout lifecycle,YES,YES,Track PENDING/READY/GENERATED/PRINTED/REVISION_REQUIRED,DESIGN_CONFIRMED,
+FM-015,1–2,شناسه MDR,,MDRDocumentID,Automation/MDR,Generated,After PDF registration,YES,YES,Link generated form to MDR record,DESIGN_CONFIRMED,
+FM-016,1–2,فایل PDF,,ApprovalFormFilePath,Automation/MDR,Generated,After PDF generation,YES,YES,Save PDF at controlled MDR path,DESIGN_CONFIRMED,
+FM-017,1–2,وضعیت چاپ,,PrintStatus,Automation,Generated,After print step,YES,YES,Track PRINT_PENDING/PRINTED/PRINT_FAILED as implementation allows,DESIGN_CONFIRMED,Exact printing mechanism to be selected later.
