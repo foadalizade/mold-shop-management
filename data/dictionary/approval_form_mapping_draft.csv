@@ -1,0 +1,15 @@
+﻿Page,FormFieldKey,FormFieldLabel,FieldID,StandardField,SourceType,SourceField,PopulationCondition,NewMold,RepairMold,Automation,Status,Notes
+1,MOLD-NAME,نام قالب,,MoldName,Master/Standard,,When AssetType=قالب and form is applicable,YES,YES,Auto-populate from Mold Master; do not use F002 as a direct name source,DRAFT,"F002 is AssetType, not a reliable MoldName field; exact form placement should be confirmed from page image."
+1,MOLD-CODE,کد قالب,F008,MoldCode,Raw + Standard,F008 کد قالب,When MoldCode exists,OPTIONAL at early new-mold stage,REQUIRED,Populate from MoldCode; for new mold may be blank until official coding,DRAFT,New-mold form may temporarily identify the mold by ProductTechnicalNo.
+1,PRODUCT-TECH-NO,شماره فنی محصول,,ProductTechnicalNo,Standard/Master,,When new mold has not yet received MoldCode,YES,N/A,Populate from future standard field,DRAFT,Independent from MoldCode.
+1,SUBGROUP,زیرگروه / حوزه مرتبط,F007,SubGroup,Raw + Standard,F007 زیرگروه,When form field is intended to show business area,YES,YES,Populate without relabeling F007 as physical installation location,DRAFT,Final visible label depends on actual form.
+1,WORK-TYPE,نوع قالب / نوع فعالیت,F003,WorkType,Raw + Standard,F003 نوع تعمیر,Always when form applies,YES,YES,Map approved WorkType value,DRAFT,Exact checkbox labels require exact form review.
+1,REQUEST-NO,شماره درخواست,F009,RequestLetterNo,Raw + Standard,F009 شماره نامه درخواست,When linked to a formal request,YES,YES,Populate from request traceability,DRAFT,
+1,RELATED-MACHINE,کد دستگاه مرتبط,F013,RelatedMachineCode,Raw + Standard + Master,F013 کد دستگاه خراب,When mold/part/device record is linked to a machine,CONDITIONAL,CONDITIONAL,Populate if applicable,DRAFT,Do not infer machine code.
+2,DELIVERY-DATE,تاریخ تحویل قالب به تولید,F041,MoldDeliveryToProductionDate,Raw + Standard,F041,Required trigger for automatic form generation,YES,YES,Populate from F041,DRAFT,For new and applicable repair molds.
+2,APPROVER,تأییدکننده,F039,Approver,Raw + Standard + Master,F039 تایید کننده,When an approver is recorded,YES,YES,Populate from approved approver master/record,DRAFT,
+2,PROCESS-STATUS,وضعیت فرآیند,,ProcessStatus,Processed,F019 → ProcessStatus,When form needs process-completion status,YES,YES,Show standardized status,DRAFT,Raw F019 remains unchanged.
+2,WORKED-HOURS,ساعات کارشده,,WorkedHours,Standard,F032,Required for repair-mold >20h trigger; optional display field,N/A,YES,For repair threshold use SUM at RepairCase level,DRAFT,Not a new-mold trigger condition.
+2,APPROVAL-FORM-ID,شناسه فرم,,ApprovalFormID,Automation,Generated,After workflow trigger,YES,YES,Generate unique form ID,DRAFT,Future automation field.
+2,VERSION,نسخه فرم,,ApprovalFormVersion,Automation,Generated,At each controlled generation/revision,YES,YES,Increment revision/version,DRAFT,Future MDR control.
+2,STATUS,وضعیت فرم,,ApprovalFormStatus,Automation,Generated,Throughout workflow lifecycle,YES,YES,NOT_APPLICABLE/PENDING/READY/GENERATED/PRINTED/REVISION_REQUIRED,DRAFT,Future automation field.
