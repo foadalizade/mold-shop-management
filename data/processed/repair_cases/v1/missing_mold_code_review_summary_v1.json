@@ -1,0 +1,40 @@
+{
+  "version": "missing-mold-code-review-v1",
+  "status": "ANALYTICAL REVIEW ONLY",
+  "source": "data/processed/repair_cases/v1/missing_mold_code_queue.csv",
+  "no_auto_assignment": true,
+  "total_records": 430,
+  "classification": [
+    {
+      "code": "HISTORICAL_EXACT_NAME_REQUEST",
+      "records": 14,
+      "worked_hours": 54,
+      "action": "Verify historical evidence, then assign if confirmed."
+    },
+    {
+      "code": "HISTORICAL_UNIQUE_NAME",
+      "records": 4,
+      "worked_hours": 5,
+      "action": "Verify historical evidence, then assign if confirmed."
+    },
+    {
+      "code": "AMBIGUOUS_HISTORICAL_NAME",
+      "records": 217,
+      "worked_hours": 933.33,
+      "action": "Use Mold Master / document evidence; do not infer from name alone."
+    },
+    {
+      "code": "NO_HISTORICAL_MATCH",
+      "records": 187,
+      "worked_hours": 769.75,
+      "action": "Manual/Master Data review required."
+    },
+    {
+      "code": "NOT_MOLD_REPAIR_WORKTYPE",
+      "records": 8,
+      "worked_hours": 25.23,
+      "action": "Separate from mold-repair RepairCase analysis."
+    }
+  ],
+  "practical_next_step": "Review the 18 historical candidates first, then resolve the 217 ambiguous name groups, while keeping 187 unmatched records in the manual/master-data queue."
+}
