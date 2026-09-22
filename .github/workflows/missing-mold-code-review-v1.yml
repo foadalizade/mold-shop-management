@@ -1,0 +1,44 @@
+name: Build Missing MoldCode Review Queue
+
+on:
+  push:
+    paths:
+      - "data/processed/ai/1405/**"
+      - "automation/python/missing_mold_code_review_v1.py"
+      - ".github/workflows/missing-mold-code-review-v1.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: missing-mold-code-review-v1
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Build review queue
+        run: python automation/python/missing_mold_code_review_v1.py
+
+      - name: Commit outputs when changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/processed/repair_cases/v1/missing_mold_code_queue.csv
+          git add data/processed/repair_cases/v1/missing_mold_code_queue_index.json
+          if git diff --cached --quiet; then
+            echo "No Missing MoldCode output changes."
+            exit 0
+          fi
+          git commit -m "Build missing MoldCode review queue"
+          git push
