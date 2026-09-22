@@ -1,0 +1,48 @@
+﻿FieldID,RawFieldName,StandardFieldName,DataType,BusinessMeaning,RequiredStatus,UnitOrFormat,RuleIDs,Layer,PowerBIUsage,Notes
+F001,ردیف,RecordID,Text/Integer,شناسه ترتیبی رکورد عملیاتی در منبع,Required for operational record,Source sequence,DQ-001; DQ-002; DQ-006; DQ-107; DQ-108,Raw + Standard,Record traceability,Not the global project key; Standard RecordKey will be generated.
+F002,قالب / قطعه / دستگاه,AssetType,Category/Text,نوع دارایی/موضوع فعالیت: قالب، قطعه یا دستگاه,Required,Controlled category,DQ-008,Raw + Standard,Asset segmentation,Final controlled list to be approved.
+F003,نوع تعمیر,WorkType,Category/Text,نوع فعالیت/کار مرتبط با رکورد,Conditional,Controlled category,DQ-009; DQ-017; DQ-025; DQ-027,Raw + Standard,Work-type analysis,Used to distinguish new/repair work; final vocabulary to be approved.
+F004,اپراتور,Operator,Text,فرد انجام‌دهنده عملیات,Conditional,Name/ID,DQ-010,Raw + Standard,Labor analysis,Future Employee Master.
+F005,مشتری,Customer,Text/Category,مشتری یا طرف دریافت‌کننده خدمت,Conditional,Name/Code,DQ-011,Raw + Standard,Customer/project analysis,Important for future outsourcing expansion.
+F006,واحد درخواست کننده,RequestingUnit,Text/Category,واحدی که درخواست انجام فعالیت را ایجاد می‌کند,Conditional,Organizational unit,DQ-012; DQ-106,Raw + Standard,Demand analysis,Distinct from F007 SubGroup.
+F007,زیرگروه,SubGroup,Text/Category,حوزه/زیرگروه سازمانی یا عملیاتی مرتبط با فعالیت,Conditional,Controlled category,DQ-013; DQ-103; DQ-104,Raw + Standard,Business-area/project segmentation,Not limited to production units; may include service and outsourcing/project domains.
+F008,کد قالب,MoldCode,Text,شناسه رسمی قالب,Required in target system; conditional in legacy,Alphanumeric code,DQ-014; DQ-015; DQ-016; DQ-017; DQ-100; DQ-101,Raw + Standard + Master,"Mold traceability, repair history, cost, hours","For new molds, ProductTechnicalNo may temporarily identify the product until official MoldCode is assigned. Future field is independent."
+F009,شماره نامه درخواست,RequestLetterNo,Text,شناسه رسمی درخواست/نامه,Conditional,Text/code,DQ-018; DQ-019; DQ-020,Raw + Standard,Request traceability,Keep Text even when value looks numeric.
+F010,خرابی,FailureDescriptionRaw,Long Text,شرح خام خرابی/مشکل ثبت‌شده,Conditional,Free text,DQ-021; DQ-022,Raw + Standard,Failure analysis,Future FailureCategory/FailureMode should be separate.
+F011,تعداد,Quantity,Numeric,تعداد مجموعه/مورد درخواستی در سطح رکورد,Conditional,Count,DQ-023; DQ-024; DQ-025; DQ-026; DQ-027,Raw + Standard,Quantity KPIs,"For a mold set, Quantity normally remains 1 even when multiple internal components exist."
+F012,درخواست کننده,Requester,Text,شخص درخواست‌کننده,Conditional,Name/ID,DQ-028; DQ-029; DQ-030; DQ-106,Raw + Standard,Request analysis,Distinct from RequestingUnit.
+F013,کد دستگاه خراب,RelatedMachineCode,Text,کد دستگاه مرتبط با قالب، قطعه یا خود دستگاه در رکورد,Conditional,Machine code,DQ-031; DQ-032; DQ-033; DQ-105,Raw + Standard + Master,Machine/asset relationship,"Includes machines from production, service and other domains; not limited to 'failed machine'."
+F014,ایستگاه,Station,Text/Category,ایستگاه کاری مرتبط با فعالیت,Conditional,Station code/name,DQ-034; DQ-035,Raw + Standard + Master,Station load/capacity analysis,Future Station Master.
+F015,دستگاه,Machine,Text,نام/شرح دستگاه ثبت‌شده در رکورد,Conditional,Machine name,DQ-036; DQ-037,Raw + Standard + Master,Machine utilization/OEE,Descriptive field; official machine code remains F013.
+F016,قطعه,Part,Text,نام/شرح قطعه مرتبط با فعالیت,Conditional,Part name,DQ-038; DQ-039,Raw + Standard + Master,Part analysis,Future Part Master.
+F017,Part Code,PartCode,Text,شناسه فنی قطعه,Conditional,Alphanumeric code,DQ-040; DQ-041; DQ-042; DQ-043; DQ-102,Raw + Standard + Master,Part traceability,PartCode may vary by mold/part relationship; future Mold-Part Mapping is authoritative where applicable.
+F018,شرح عملیات,OperationDescriptionRaw,Long Text,شرح خام عملیات انجام‌شده,Conditional,Free text,DQ-044; DQ-045,Raw + Standard,Process/operation analysis,Future OperationCode/OperationMaster.
+F019,نتیجه فرایند,ProcessResultRaw,Text,نتیجه خام ثبت‌شده برای فرآیند,Conditional,OK/NOK/NC/etc.,DQ-003; DQ-004; DQ-046; DQ-047; DQ-048; DQ-049,Raw + Processed,Process completion KPI,Processed field ProcessStatus is separate; blank semantics require final approval.
+F020,تاریخ ارسال به سختکاری,HardeningSentDate,Text/Date,تاریخ ارسال قالب/قطعه به سختکاری,Conditional,Persian date,DQ-050; DQ-051,Raw + Standard,External-process lead time,
+F021,مجری سختکاری,HardeningExecutor,Text,شخص/شرکت مجری سختکاری,Conditional,Supplier/executor,DQ-052; DQ-053,Raw + Standard + Master,Supplier/outsource analysis,Future Supplier Master.
+F022,هزینه سختکاری تومان,HardeningCost,Numeric,هزینه عملیات سختکاری,Conditional,Toman,DQ-054,Raw + Standard,External process cost,
+F023,تاریخ دریافت,HardeningReceivedDate,Text/Date,تاریخ دریافت از سختکاری,Conditional,Persian date,DQ-055; DQ-056,Raw + Standard,Hardening lead time,Raw header duplicated; standardized name resolves context.
+F024,تاریخ ارسال به کروم,ChromeSentDate,Text/Date,تاریخ ارسال به کروم,Conditional,Persian date,DQ-057; DQ-058,Raw + Standard,Chrome lead time,
+F025,مجری کروم,ChromeExecutor,Text,شخص/شرکت مجری کروم,Conditional,Supplier/executor,DQ-059,Raw + Standard + Master,Supplier/outsource analysis,Future Supplier Master.
+F026,هزینه کروم تومان,ChromeCost,Numeric,هزینه عملیات کروم,Conditional,Toman,DQ-060,Raw + Standard,External process cost,
+F027,تاریخ دریافت,ChromeReceivedDate,Text/Date,تاریخ دریافت از کروم,Conditional,Persian date,DQ-061; DQ-062,Raw + Standard,Chrome lead time,Raw header duplicated; standardized name resolves context.
+F028,ماه,Month,Text/Category,ماه مرتبط با رکورد,Conditional,Persian month,DQ-063,Raw + Standard,Time-series analysis,Should align with source sheet context.
+F029,تاریخ,WorkDate,Text/Date,تاریخ انجام/ثبت فعالیت,Conditional,Persian date,DQ-064,Raw + Standard,Time-series analysis,
+F030,ساعت کاری,WorkShift,Text,بازه زمانی/شیفت کاری ثبت‌شده,Conditional,HH:MMالیHH:MM,DQ-065,Raw + Standard,Labor/shift analysis,Future parsed ShiftStartTime/ShiftEndTime.
+F031,مقدار دقیقه کار شده,WorkedMinutes,Numeric,مدت کار ثبت‌شده بر حسب دقیقه,Conditional,Minute,DQ-066; DQ-068,Raw + Standard,Worked-time KPI,
+F032,مقدار ساعت کار شده,WorkedHours,Numeric,مدت کار ثبت‌شده بر حسب ساعت,Conditional,Hour,DQ-067; DQ-068; DQ-069,Raw + Standard,"Worked-time, MTTR, productivity",Never use this field to detect records.
+F033,مرخصی اپراتور,OperatorLeave,Numeric/Text,ثبت مرخصی اپراتور که بر زمان در دسترس عملیات اثر می‌گذارد,Conditional,Source-defined value,DQ-070; DQ-071; DQ-074,Raw + Standard,Available labor time / delay analysis,Source semantics/units require finalization.
+F034,ساعت مرخصی اپراتور,OperatorLeaveHours,Numeric,مدت مرخصی اپراتور به ساعت,Conditional,Hour,DQ-072; DQ-073; DQ-074,Raw + Standard,Available labor time / delay analysis,Must remain separate from WorkedHours.
+F035,توضیحات,Notes,Long Text,توضیحات تکمیلی شامل علت/مقدار/تاریخ مرخصی یا سایر عوامل توقف و تأخیر,Optional,Free text,DQ-075; DQ-076,Raw + Future structured,Delay/exception context,Future structured extraction from Notes; Raw remains unchanged.
+F036,قطعات خراب شده,DamagedParts,Text/Numeric,اطلاعات قطعات آسیب‌دیده مرتبط با فعالیت,Conditional,TBD,DQ-077; DQ-078,Raw + Future Master,Damage/failure analysis,Exact structure (name/count/both) requires later confirmation.
+F037,علت خرابی ثبت شده2,RecordedFailureCause,Text,علت خرابی ثبت‌شده,Conditional,Controlled/freetext,DQ-079; DQ-080,Raw + Future Master,Pareto/5Why/FMEA,Future Failure Cause Master.
+F038,تاریخ3,AdditionalProcessDateTime,Text/DateTime/TimeRange,فیلد زمانی تکمیلی با معنای فرآیندی هنوز در حال تثبیت,Conditional,Date/time/time-range,DQ-081; DQ-082,Raw + Validation,Process timeline,Observed values may be time ranges; do not force date semantics yet.
+F039,تایید کننده,Approver,Text,شخص تأییدکننده فعالیت/نتیجه/تحویل,Conditional,Name/ID,DQ-083,Raw + Standard + Master,Approval/MDR traceability,Future Employee/Approver Master.
+F040,تاریخ تحویل تعمیر/استارت تولید,RepairDeliveryOrProductionStartDate,Text/Date,تاریخ تحویل مورد تعمیر/ساخت یا شروع تولید,Conditional,Persian date,DQ-084,Raw + Standard,Lead-time/completion KPI,
+F041,تاریخ تحویل قالب به تولید,MoldDeliveryToProductionDate,Text/Date,تاریخ تحویل قالب به واحد تولید,Conditional,Persian date,DQ-085; DQ-086,Raw + Standard + MDR,Mold turnaround/approval traceability,Connect to Mold Approval/Handover process.
+F042,فرم صدور تایید,ApprovalFormStatus,Text/Category,وضعیت فرم صدور تأیید در شیت‌هایی که این فیلد وجود دارد,Conditional / Schema variant,Status,DQ-087; DQ-088,Raw + Standard + MDR,Approval status,Currently observed as a non-universal column; keep separate from ProcessResult.
+F043,فی (تومان),UnitPrice,Numeric,قیمت واحد ثبت‌شده برای کار/مورد,Conditional,Toman,DQ-089,Raw + Standard,Cost analysis,
+F044,قیمت کار شده (تومان),WorkPrice,Numeric,قیمت/هزینه کار انجام‌شده,Conditional,Toman,DQ-090; DQ-091,Raw + Standard,Cost KPI,Do not assume exact Quantity×UnitPrice formula.
+F045,دقیقه خرابی دستگاه تراشکاری,LatheMachineDowntimeMinutes,Numeric,مدت خرابی دستگاه‌های تراشکاری در واحد قالب‌سازی که موجب توقف/تأخیر فرآیند می‌شود,Conditional,Minute,DQ-092; DQ-094,Raw + Standard,Machine downtime / project delay,Operational delay driver.
+F046,ساعت خرابی دستگاه تراشکاری,LatheMachineDowntimeHours,Numeric,مدت خرابی دستگاه‌های تراشکاری به ساعت,Conditional,Hour,DQ-093; DQ-094,Raw + Standard,Machine downtime / project delay,Operational delay driver.
+F047,,UnnamedSourceField,Unknown,ستون منبع بدون عنوان مشخص,Structural/TBD,Unknown,DQ-095; DQ-096,Raw + Validation,Schema monitoring,Do not delete or repurpose before business review.
