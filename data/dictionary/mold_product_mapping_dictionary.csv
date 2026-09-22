@@ -1,0 +1,11 @@
+﻿FieldID,StandardFieldName,BusinessMeaning,DataType,RequiredStatus,Unique,Validation,Notes
+MP-001,MappingID,شناسه یکتای رابطه قالب و شماره فنی محصول,Text/UUID,Required,YES,Unique,
+MP-002,MoldID,شناسه داخلی قالب,Text/UUID,Required,NO,Must exist in Mold Master,
+MP-003,MoldCode,کد رسمی قالب,Text,Required when coded,NO,Must map to Mold Master,
+MP-004,ProductTechnicalNo,شماره فنی محصول,Text,Required for mapping,NO,Must be text-preserving,
+MP-005,RelationType,نوع رابطه محصول و قالب,Category,Required,NO,Controlled values e.g. Primary/Secondary,Do not assume one-to-one.
+MP-006,EffectiveFrom,تاریخ شروع اعتبار رابطه,PersianDate,Optional,NO,Valid date,
+MP-007,EffectiveTo,تاریخ پایان اعتبار رابطه,PersianDate,Optional,NO,Valid date >= EffectiveFrom,
+MP-008,SourceDocumentID,سند منبع ایجاد/تغییر رابطه,Text,Optional,NO,MDR traceability,
+MP-009,Status,وضعیت رابطه,Category,Required,NO,Active/Inactive or approved vocabulary,
+MP-010,Notes,توضیحات رابطه,LongText,Optional,NO,Free text,
