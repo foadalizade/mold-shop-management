@@ -1,4 +1,5 @@
 name: Build Missing MoldCode Review Queue
+# Review-only layer; no MoldCode inference.
 
 on:
   push:
