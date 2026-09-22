@@ -1,0 +1,52 @@
+name: Build AI-readable 1405 data
+
+on:
+  push:
+    paths:
+      - "1405.xlsx"
+      - "data/source/1405.xlsx"
+      - "automation/python/build_ai_readable_1405.py"
+      - ".github/workflows/build-ai-readable-data.yml"
+  schedule:
+    - cron: "*/15 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: ai-readable-1405
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: python -m pip install --upgrade pip openpyxl
+
+      - name: Build AI-readable layer
+        run: python automation/python/build_ai_readable_1405.py
+
+      - name: Commit generated data when changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/processed/ai/1405
+          if git diff --cached --quiet; then
+            echo "No AI-readable data changes."
+            exit 0
+          fi
+          git commit -m "Build AI-readable 1405 data"
+          git push
